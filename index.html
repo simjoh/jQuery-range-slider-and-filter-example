@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Range Slider</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
+    <!--  -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--  -->
+    <link href="css/jquery-ui-range-slider.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      
+    <style>
+    body{
+      padding:5px;
+      max-width: 800px;
+      margin:auto;
+
+    }
+
+    #container{
+      padding:5px;
+    }
+    #filtered-table{
+      padding-top:15px;
+    }
+    a {
+      color: black;
+      margin: 5px;
+      cursor: pointer;
+      padding:1em;
+      text-align: center;
+      justify-content: center;
+      border: solid 1px transparent;
+      border-radius: 5px;
+    }
+    a.active {
+      text-decoration: none;
+      background: #e3e3e3;
+      border-color: #aaaaaa;
+    }
+    a:hover {
+      text-decoration: inherit;
+      color:black;
+    }
+     th{
+      width:15px;
+      font-size: 14px;
+      height:15px;
+    }
+    .vecka th {
+        width: 15px;
+        height: 12px;
+        text-align: left;
+        padding:0px;
+        font-size: 14px;
+        text-align: center;
+    }
+    td{
+      padding:0px;
+    }
+    div.Free{
+      background: green;
+      width: 15px;
+      height: 15px;
+      border: 0px solid white;
+      text-align: center;
+    }
+    tbody > tr > td > div > form > button{
+            width: 15px;
+      height: 15px;
+      border: 0px solid white;
+      text-align: center;
+    }
+    button.Partly{
+      background: linear-gradient( to bottom right, #4B8A08 0%, #4B8A08 50%, #8A0808 50%, #8A0808 100%);
+    }
+    button.Taken{
+      background-color:#8A0808;
+    }
+    </style>
+  </head>
+
+
+  <body>
+    <div id="container">
+      <h1>jQuery UI Range Slider</h1>
+      
+      <div role="tabpanel">
+        <div class="hr"></div>
+        <h2>CUSTOM EVENT (rangeSlide) with some filtering</h2>
+        <p>
+        A simple example using the jQuery rangeslide and some buttons to filter data.
+        It is a quite naive implementation where the entire table is rerendered each time the slider handler is released and there is click on any of the buttons. 
+        </p>
+        <p>A more elegant way would be to check which the rooms that are added or deleted and just add these. </p>
+        <p>A more basic example can be found on the <a href="https://jqueryui.com/slider/#range">JQuery-UI manual page</a>. </p>
+
+
+      </div>
+      <p>
+        <label for="amount">Area range:</label>
+        <input type="text" id="amount" readonly style="border:1;">
+      </p>
+      <div id="container" style="height:30px">
+        <div id="slider-range" ></div>
+      </div>
+      <div class="hr"></div>
+      <div id="filter-properties"></div>
+      <div class="hr"></div>
+      <div id="filtered-table"></div>
+
+    </div>
+    <script type="text/javascript" src="js/jquery-ui-range-slider.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
