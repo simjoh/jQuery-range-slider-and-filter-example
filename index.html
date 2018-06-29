@@ -17,14 +17,14 @@
       
       <div role="tabpanel">
         <div class="hr"></div>
-        <h2>CUSTOM EVENT (rangeSlide) with some filtering</h2>
+        <h2>Range slide with some filtering</h2>
         <p>
         A simple example using the jQuery rangeslide and some buttons to filter data.
-        It is a quite naive implementation where the entire table is rerendered each time the slider handler is released and there is click on any of the buttons. 
         </p>
-        <p>A more elegant way would be to check which the rooms that are added or deleted and just add these. </p>
-        <p>A more basic example can be found on the <a href="https://jqueryui.com/slider/#range">JQuery-UI manual page</a>. </p>
-
+         <p>A more basic example of the range slide can be found on the <a href="https://jqueryui.com/slider/#range">JQuery-UI manual page</a>. </p>
+        <p>
+        The table is rendered once, then rows are hidden or shown depending on the filters.
+        </p>
 
       </div>
       <p>
@@ -37,6 +37,12 @@
       <div class="hr"></div>
       <div id="filter-properties"></div>
       <div class="hr"></div>
+      <div id="filter-on-booking-state">
+        <a id="filterbooking" data-booking-filter="Booked">Booked</a>
+        <a id="filterbooking" data-booking-filter="Free">Free</a>
+        <a id="filterbooking" data-booking-filter="Partly">Moving out this month</a>
+        <a id="filterbooking" class="active" data-booking-filter="All">All</a>
+      </div>
       <div id="filtered-table"></div>
 
     </div>
