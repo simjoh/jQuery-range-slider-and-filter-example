@@ -9,7 +9,13 @@ body{
   padding:5px;
 }
 #filtered-table{
-  padding-top:15px;
+  padding:5px;
+}
+#filter-properties{
+  height:55px;
+}
+#filter-on-booking-state{
+	height: 55px;
 }
 a {
   color: black;
@@ -49,6 +55,7 @@ td{
 td.Free{
   background: green;
   width: 15px;
+  min-width: 15px;
   height: 15px;
   border-bottom: 2px solid white;
   border-top: 1px solid white;
