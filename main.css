@@ -1,8 +1,68 @@
-.demo {
-  padding: 40em;
-},
-a.active {
-  background-color: 'red';
+body{
+  padding:5px;
+  max-width: 800px;
+  margin:auto;
+
 }
 
-/*# sourceMappingURL=main.css.map */
+#container{
+  padding:5px;
+}
+#filtered-table{
+  padding-top:15px;
+}
+a {
+  color: black;
+  margin: 5px;
+  cursor: pointer;
+  padding:1em;
+  text-align: center;
+  justify-content: center;
+  border: solid 1px transparent;
+  border-radius: 5px;
+}
+a.active {
+  text-decoration: none;
+  background: #e3e3e3;
+  border-color: #aaaaaa;
+}
+a:hover {
+  text-decoration: inherit;
+  color:black;
+}
+ th{
+  width:15px;
+  font-size: 14px;
+  height:15px;
+}
+.vecka th {
+    width: 15px;
+    height: 12px;
+    text-align: left;
+    padding:0px;
+    font-size: 14px;
+    text-align: center;
+}
+td{
+  padding:0px;
+}
+td.Free{
+  background: green;
+  width: 15px;
+  height: 15px;
+  border-bottom: 2px solid white;
+  border-top: 1px solid white;
+  text-align: center;
+}
+tbody > tr > td > div > form > button{
+        width: 15px;
+  height: 15px;
+  border: 0px solid white;
+  text-align: center;
+}
+button.Partly{
+  background: linear-gradient( to bottom right, #4B8A08 0%, #4B8A08 50%, #8A0808 50%, #8A0808 100%);
+}
+button.Taken{
+  background-color:#8A0808;
+}
